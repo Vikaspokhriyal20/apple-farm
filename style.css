@@ -1,0 +1,137 @@
+*
+{
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+
+body
+{
+    /*background-color: #9be010;
+	background: radial-gradient(#e5f89e, #96e001); */
+}
+
+.hero-section
+{
+    width: 90%;
+    margin: 20px auto 20px;
+    background: radial-gradient(#e5f89e, #96e001);
+    height: 500px auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-item-1
+{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.grid-item-1 p
+{
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.grid-item-1 p::first-letter
+{
+    font-size: 30px;
+    font-family: cursive;
+    color: red;
+    
+}
+
+
+
+
+.grid-item-2
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center; 
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.child-item-1
+{
+   background-image: url(https://media.istockphoto.com/id/177492022/photo/apple.webp?b=1&s=170667a&w=0&k=20&c=TxvbaRwFVOo36P-n6TvZv-IuJep1sT7jJhlC6GewOZM=);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 80%;
+   height: 200px;
+   border-radius: 4px;
+   justify-content: center;
+}
+
+.child-item-2
+{
+   background-image: url(https://media.istockphoto.com/id/1152428242/photo/green-apple-fruit-with-half-and-green-leaf-isolated-on-white.webp?b=1&s=170667a&w=0&k=20&c=9i5LBuNpzRobcCRuWEgjVPj00qYeGq3WSlnYmMUu1sc=);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 80%;
+   height: 200px;
+   border-radius: 4px;
+}
+
+.child-item-3
+{
+   background-image: url(https://media.istockphoto.com/id/834816218/photo/red-apple-fruit-with-half-and-green-leaf-isolated-on-white.webp?b=1&s=170667a&w=0&k=20&c=dN35gK-sUobOXj8SCA-JvwE4Zn0pTRdBRea-Q1MxtQs=);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   border-radius: 4px;
+   width: 80%;
+   height: 200px;
+ 
+}
+
+.child-item-4
+{
+background-image: url(https://media.istockphoto.com/id/157439102/photo/golden-delicious-and-jazz-apples-at-harvest.webp?b=1&s=170667a&w=0&k=20&c=djQHqs1awmKNu396Jdmjwz0BltRu0s9sefZjr9e1amg=);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 4px;
+width: 80%;
+height: 200px;
+}
+
+
+@media screen and (max-width:700px) {
+    .hero-section
+    {
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin: 0;
+    }
+
+    
+
+   .child-item-1,
+   .child-item-2,
+   .child-item-3,
+   .child-item-4
+   {
+    width: 100%;
+    padding: 25px;
+    border-radius: 20px;
+   }
+
+
+
+}
+
+
+
+
+
+
+
+
